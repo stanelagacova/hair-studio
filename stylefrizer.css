@@ -1,0 +1,576 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f0e9;
+    color: #1b1b1b;
+    line-height: 1.5;
+}
+
+
+.site-header {
+    min-height: 110px;
+    padding: 25px 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #f3f0e9;
+    border-bottom: 1px solid #cbc6bc;
+}
+
+.brand {
+    font-size: 34px;
+    letter-spacing: 9px;
+    font-weight: 800;
+}
+
+.brand span,
+.footer-logo span {
+    color: #d86b3c;
+}
+
+.main-nav {
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.main-nav a {
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.main-nav a:hover {
+    color: #d86b3c;
+}
+
+
+.hero {
+    position: relative;
+    padding: 80px 7%;
+    min-height: 520px;
+    overflow: hidden;
+    background: #173b38;
+    color: #fff;
+}
+
+.hero-copy {
+    float: left;
+    width: 55%;
+    padding-top: 40px;
+}
+
+.eyebrow {
+    color: #e9a33d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 7vw, 92px);
+    line-height: .9;
+    font-weight: normal;
+    letter-spacing: -4px;
+}
+
+.hero h2 span {
+    color: #e9a33d;
+    font-style: italic;
+}
+
+.hero-text {
+    max-width: 520px;
+    margin-top: 35px;
+    color: #cbd8d5;
+    font-size: 16px;
+}
+
+
+.portrait {
+    float: left;
+    position: relative;
+    width: 260px;
+    height: 340px;
+    margin-left: 4%;
+    margin-top: 20px;
+}
+
+.face-shape {
+    position: absolute;
+    width: 145px;
+    height: 215px;
+    background: #e4a77b;
+    border-radius: 48% 48% 45% 45%;
+    left: 58px;
+    top: 65px;
+}
+
+.hair-shape {
+    position: absolute;
+    z-index: 2;
+    width: 205px;
+    height: 230px;
+    background: #24201e;
+    border-radius: 50% 50% 40% 35%;
+    left: 25px;
+    top: 20px;
+
+    border-right: 22px solid #392f29;
+}
+
+.hair-shape::after {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 170px;
+    background: #e4a77b;
+    border-radius: 50%;
+    left: 40px;
+    top: 65px;
+}
+
+.neck-shape {
+    position: absolute;
+    width: 75px;
+    height: 100px;
+    background: #d79468;
+    left: 93px;
+    bottom: 0;
+    border-radius: 0 0 25px 25px;
+}
+
+.hero-badge {
+    float: right;
+
+    width: 115px;
+    height: 115px;
+    margin-top: 5px;
+
+    border-radius: 50%;
+    background: #e9a33d;
+    color: #173b38;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: rotate(7deg);
+}
+
+.hero-badge strong {
+    font-size: 27px;
+}
+
+.hero-badge span {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-badge small {
+    font-size: 9px;
+}
+
+.clear {
+    clear: both;
+}
+
+.numbers {
+    padding: 35px 7%;
+    background: #e9a33d;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.number-box {
+    text-align: center;
+}
+
+.number-box strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    color: #173b38;
+}
+
+.number-box span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.styles-section {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #d86b3c;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.style-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.style-card {
+    min-height: 150px;
+    padding: 25px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    border-top: 1px solid #c7c2b8;
+    background: #f7f4ee;
+
+    transition: .25s;
+}
+
+.style-card:hover {
+    transform: translateX(8px);
+    background: #fff;
+}
+
+.style-mark {
+    flex: 0 0 95px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #173b38;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-mark span {
+    display: block;
+    background: #e9a33d;
+}
+
+.short-cut span {
+    width: 48px;
+    height: 55px;
+    border-radius: 50% 50% 25% 25%;
+}
+
+.soft-wave span {
+    width: 52px;
+    height: 60px;
+    border-radius: 45% 55% 35% 65%;
+    transform: rotate(15deg);
+}
+
+.long-layer span {
+    width: 45px;
+    height: 70px;
+    border-radius: 50% 50% 10% 10%;
+}
+
+.style-info {
+    flex: 1;
+}
+
+.style-info small {
+    color: #d86b3c;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.style-info h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin: 3px 0 8px;
+}
+
+.style-info p {
+    max-width: 600px;
+    color: #666;
+    font-size: 14px;
+}
+
+.price {
+    min-width: 130px;
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 11px;
+    color: #777;
+}
+
+.slots {
+    padding: 60px 7%;
+    background: #d86b3c;
+    color: #fff;
+}
+
+.slots h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.slots .eyebrow {
+    color: #ffd799;
+}
+
+.time-list {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.time-list span {
+    padding: 12px 25px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.time-list span:hover {
+    background: #fff;
+    color: #d86b3c;
+}
+
+.booking {
+    padding: 90px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+
+    background: #173b38;
+    color: #fff;
+}
+
+.working-hours,
+.booking-form {
+    width: 50%;
+}
+
+.working-hours h2,
+.booking-form h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.day {
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #44615f;
+}
+
+.day span {
+    color: #b7c6c4;
+}
+
+.address {
+    margin-top: 35px;
+    color: #e9a33d;
+    line-height: 1.8;
+}
+
+
+.booking-form {
+    padding: 40px;
+    background: #f3f0e9;
+    color: #1b1b1b;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-head span {
+    color: #d86b3c;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.form-head h2 {
+    margin-top: 5px;
+}
+
+.booking-form label {
+    margin: 14px 0 7px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 14px;
+
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+
+    font-family: inherit;
+    outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: #d86b3c;
+}
+
+.booking-form button {
+    margin-top: 30px;
+    padding: 17px 20px;
+
+    border: 0;
+    border-radius: 3px;
+
+    background: #e9a33d;
+    color: #173b38;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-form button span {
+    font-size: 20px;
+}
+
+.booking-form button:hover {
+    background: #d86b3c;
+    color: #fff;
+}
+
+
+footer {
+    min-height: 160px;
+    padding: 40px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #102a28;
+    color: #9eb0ae;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+footer p {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+footer small {
+    font-size: 10px;
+}
+
+
+@media (max-width: 800px) {
+
+    .hero-copy {
+        float: none;
+        width: 100%;
+    }
+
+    .portrait {
+        float: left;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .hero-badge {
+        margin-top: 70px;
+    }
+
+    .numbers {
+        flex-wrap: wrap;
+    }
+
+    .number-box {
+        width: 45%;
+    }
+
+    .style-card {
+        flex-wrap: wrap;
+    }
+
+    .style-info {
+        min-width: 55%;
+    }
+
+    .booking {
+        flex-direction: column;
+    }
+
+    .working-hours,
+    .booking-form {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

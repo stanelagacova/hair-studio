@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIR — Hair Atelier</title>
+    <link rel="stylesheet" href="stylefrizer.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="brand">NOIR<span>.</span></h1>
+
+        <nav class="main-nav">
+            <a href="#studio">Студио</a>
+            <a href="#styles">Фризури</a>
+            <a href="#booking">Закажи</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- hero -->
+        <section class="hero" id="studio">
+
+            <div class="hero-copy">
+                <p class="eyebrow">HAIR ATELIER / SKOPJE</p>
+
+                <h2>
+                    Твојот стил.<br>
+                    <span>Нашиот потпис.</span>
+                </h2>
+
+                <p class="hero-text">
+                    Современ пристап кон косата, прецизни линии и стил
+                    создаден според твојот карактер.
+                </p>
+            </div>
+
+            <!-- css portrait -->
+            <div class="portrait">
+                <div class="hair-shape"></div>
+                <div class="face-shape"></div>
+                <div class="neck-shape"></div>
+            </div>
+
+            <div class="hero-badge">
+                <strong>15%</strong>
+                <span>попуст</span>
+                <small>прва посета</small>
+            </div>
+
+            <div class="clear"></div>
+        </section>
+
+
+        <!-- numbers -->
+        <section class="numbers">
+
+            <div class="number-box">
+                <strong>08+</strong>
+                <span>години искуство</span>
+            </div>
+
+            <div class="number-box">
+                <strong>2.4K</strong>
+                <span>задоволни клиенти</span>
+            </div>
+
+            <div class="number-box">
+                <strong>18</strong>
+                <span>авторски стилови</span>
+            </div>
+
+        </section>
+
+
+        <!-- hairstyles -->
+        <section class="styles-section" id="styles">
+
+            <div class="section-heading">
+                <p>SELECT YOUR LOOK</p>
+                <h2>Signature styles</h2>
+            </div>
+
+            <div class="style-list">
+
+                <article class="style-card">
+                    <div class="style-mark short-cut">
+                        <span></span>
+                    </div>
+
+                    <div class="style-info">
+                        <small>01 / PRECISION</small>
+                        <h3>Sharp Bob</h3>
+                        <p>
+                            Чисти линии и прецизна форма за модерен,
+                            минималистички изглед.
+                        </p>
+                    </div>
+
+                    <div class="price">1.200 <span>ден.</span></div>
+                </article>
+
+
+                <article class="style-card">
+                    <div class="style-mark soft-wave">
+                        <span></span>
+                    </div>
+
+                    <div class="style-info">
+                        <small>02 / TEXTURE</small>
+                        <h3>Soft Waves</h3>
+                        <p>
+                            Лесни бранови со природен волумен и
+                            ненаметливо елегантен финиш.
+                        </p>
+                    </div>
+
+                    <div class="price">1.500 <span>ден.</span></div>
+                </article>
+
+
+                <article class="style-card">
+                    <div class="style-mark long-layer">
+                        <span></span>
+                    </div>
+
+                    <div class="style-info">
+                        <small>03 / MOVEMENT</small>
+                        <h3>Long Layers</h3>
+                        <p>
+                            Слоевито потстрижување за движење,
+                            леснотија и природна текстура.
+                        </p>
+                    </div>
+
+                    <div class="price">1.350 <span>ден.</span></div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- available times -->
+        <section class="slots">
+
+            <div>
+                <p class="eyebrow">TODAY / AVAILABLE</p>
+                <h2>Слободни термини</h2>
+            </div>
+
+            <div class="time-list">
+                <span>10:30</span>
+                <span>12:00</span>
+                <span>14:30</span>
+                <span>16:00</span>
+              
+            </div>
+
+        </section>
+
+
+        <!-- booking -->
+        <section class="booking" id="booking">
+
+            <div class="working-hours">
+                <p class="eyebrow">VISIT THE ATELIER</p>
+                <h2>Работно време</h2>
+
+                <div class="day">
+                    <span>Пон — Пет</span>
+                    <strong>09:00 — 17:00</strong>
+                </div>
+
+                <div class="day">
+                    <span>Сабота</span>
+                    <strong>10:00 — 14:00</strong>
+                </div>
+
+                <div class="day">
+                    <span>Недела</span>
+                    <strong>Затворено</strong>
+                </div>
+
+                <p class="address">
+                    NOIR Hair Atelier<br>
+                    Skopje, Macedonia
+                </p>
+            </div>
+
+
+            <form class="booking-form">
+
+                <div class="form-head">
+                    <span>BOOK / 01</span>
+                    <h2>Резервирај термин</h2>
+                </div>
+
+                <label for="name">Име и презиме</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="пр. Станела Гацова "
+                    required
+                >
+
+
+                <label for="haircut">Избери фризура</label>
+                <select id="haircut" name="haircut">
+                    <option>Sharp Bob</option>
+                    <option>Soft Waves</option>
+                    <option>Long Layers</option>
+                </select>
+
+
+                <label for="date">Датум</label>
+                <input type="date" id="date" name="date">
+
+
+                <button type="submit">
+                    ЗАКАЖИ ТЕРМИН
+                    <span>→</span>
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-logo">NOIR<span>.</span></div>
+
+        <p>Hair is personal. Make it yours.</p>
+
+        <small>© 2026 NOIR Hair Atelier. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>
